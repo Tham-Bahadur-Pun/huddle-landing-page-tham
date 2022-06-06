@@ -15,7 +15,13 @@
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./dist/main.css" />
   </head>
   <body>
@@ -43,6 +49,7 @@
         />
       </div>
     </header>
+
     <main class="main">
       <div class="main--card main--card-1">
         <div class="main--card--details">
@@ -90,16 +97,74 @@
           class="main--card-image"
         />
       </div>
-      <!-- <div class="subscribe">
-        <h1 class="heading--1 subscribe--heading">
-          Ready To Build Your Community?
-        </h1>
-        <a href="" class="btn subscribe--btn">Get Started For Free</a>
-      </div> -->
     </main>
-    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
-    example@huddle.com About Us What We Do FAQ Career Blog Contact Us &copy;
-    Copyright 2018 Huddle. All rights reserved. -->
+
+    <div class="subscribe">
+      <h1 class="heading--1 subscribe--heading">
+        Ready To Build Your Community?
+      </h1>
+      <a href="" class="btn subscribe--btn header--details-btn"
+        >Get Started For Free</a
+      >
+    </div>
+
+    <footer class="footer">
+      <img src="./images/logo.svg" alt="footer logo" class="footer--logo" />
+      <div class="footer--details">
+        <div class="info">
+          <div class="info--location">
+            <img
+              src="./images/icon-location.svg"
+              alt="location icon"
+              class="info--location-image"
+            />
+            <p class="paragraph info--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="info--tel">
+            <img
+              src="./images/icon-phone.svg"
+              alt="telephone image"
+              class="info--tel-image"
+            />
+            <p class="paragraph info--text">
+              <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+            </p>
+          </div>
+          <div class="info--mail">
+            <img
+              src="./images/icon-email.svg"
+              alt="mail image"
+              class="info--mail-image"
+            />
+            <p class="paragraph info--text">
+              <a href="mailto:example@huddle.com">example@huddle.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer--menus">
+          <ul class="footer--links">
+            <li class="footer--list">
+              <a href="#" class="footer--link">About Us</a
+              ><a href="#" class="footer--link">What We Do</a
+              ><a href="#" class="footer--link">FAQ</a
+              ><a href="#" class="footer--link">Career</a
+              ><a href="#" class="footer--link">Blog</a
+              ><a href="#" class="footer--link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social--links">
+          <i class="fa-brands fa-facebook"></i
+          ><i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <p class="paragaraph copyright--text">
+        &copy; Copyright 2018 Huddle. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
