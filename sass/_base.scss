@@ -12,3 +12,12 @@ html {
   font-size: 112.5%;
   font-family: $body-font;
 }
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}

@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+.btn {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border: none;
+}
+
 *,
 *::before,
 *::after {
@@ -11,4 +20,27 @@ html {
   box-sizing: border-box;
   font-size: 112.5%;
   font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.header {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(193deg, 100%, 96%);
+  display: grid;
+}
+.header--logo {
+  width: 6.8rem;
 }/*# sourceMappingURL=main.css.map */
