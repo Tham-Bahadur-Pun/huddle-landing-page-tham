@@ -38,8 +38,13 @@
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  padding: 2rem;
-
+  transform: translateY(3rem);
+  padding: 1.7rem;
+  -webkit-transform: translateY(3rem);
+  -moz-transform: translateY(3rem);
+  -ms-transform: translateY(3rem);
+  -o-transform: translateY(3rem);
+  background-color: white;
   &--heading {
     font-size: 0.91rem;
     margin-bottom: 1rem;

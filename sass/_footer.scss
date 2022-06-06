@@ -1,7 +1,9 @@
 .footer {
   background-color: $secondary--color-dark-cyan;
   color: #fff;
-  padding: 1rem;
+  padding: 8rem 1rem 1rem 1rem;
+  display: grid;
+  grid-row-gap: 2rem;
   a {
     color: #fff;
   }
@@ -9,6 +11,16 @@
   }
   &--details {
     .info {
+      display: grid;
+      row-gap: 2rem;
+      &--location,
+      &--tel,
+      &--mail {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        column-gap: 1rem;
+        // align-items: center;
+      }
       &--location {
       }
       &--tel {
@@ -16,19 +28,44 @@
       &--mail {
       }
       &--text {
+        font-size: 0.93rem;
       }
     }
   }
   &--menus {
+    margin-top: 4rem;
   }
   &--links {
+    list-style: none;
+    display: grid;
+    row-gap: 1.5rem;
   }
   &--list {
+    display: block;
   }
   &--link {
+    display: block;
   }
   .copyright--text {
+    text-align: center;
+    font-size: 0.8rem;
   }
   .social--links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    i {
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border: 2px solid white;
+      padding: 0.7rem;
+      cursor: pointer;
+    }
+    i:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 }
