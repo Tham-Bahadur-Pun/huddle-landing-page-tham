@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+.heading--1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 0.988rem;
+}
+
 .btn {
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -34,13 +45,48 @@ a {
 
 .header {
   min-height: 100vh;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   background-image: url("../images/bg-hero-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(193deg, 100%, 96%);
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+}
+.header--nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.header--nav-btn {
+  justify-self: end;
+  font-weight: 700;
+  font-size: 0.6rem;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 0rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 .header--logo {
-  width: 6.8rem;
+  width: 6.5rem;
+}
+.header--container {
+  display: grid;
+  align-content: center;
+}
+.header--details {
+  text-align: center;
+  padding: 4rem 0;
+}
+.header--details-btn {
+  color: #fff;
+  background-color: hsl(322deg, 100%, 66%);
+  padding: 0.5rem 3rem;
+  font-size: 0.9rem;
+}
+.header--text {
+  margin: 1.5rem 0;
+}
+.header--hero-image {
+  justify-self: center;
 }/*# sourceMappingURL=main.css.map */
