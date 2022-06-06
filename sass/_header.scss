@@ -7,6 +7,12 @@
   background-color: $secondary--color-pale-cyan;
   display: grid;
   grid-template-rows: min-content 1fr;
+  // align-items: center;
+  @media only screen and (min-width: $bp-md) {
+    padding: 4rem;
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+
   &--nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,32 +25,59 @@
       background-color: #fff;
       padding: 0.5rem 1.5rem;
       box-shadow: 0 0rem 0.4rem rgba(0, 0, 0, 0.2);
+      @media only screen and (min-width: $bp-md) {
+        padding: 0.8rem 5em;
+      }
     }
   }
   &--logo {
     width: 6.5rem;
+    @media only screen and (min-width: $bp-md) {
+      width: 10rem;
+    }
   }
   &--container {
     display: grid;
     align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(339px, max-content));
+    column-gap: 4rem;
+    @media only screen and (min-width: $bp-md-1) {
+      margin-top: 5rem;
+    }
   }
   &--details {
     text-align: center;
     padding: 4rem 0;
+    @media only screen and (min-width: $bp-md-1) {
+      text-align: left;
+    }
     &-btn {
       color: #fff;
       background-color: $primary--color-pink;
       padding: 0.5rem 3rem;
       font-size: 0.9rem;
+      // @media only screen and (min-width: $bp-md) {
+      //   padding: 0.8rem 6rem;
+      // }
     }
   }
-  // &--heading {
-  // }
+  &--heading {
+    max-width: 33rem;
+    @media only screen and (min-width: $bp-md-1) {
+      font-size: 2.5rem;
+    }
+  }
   &--text {
+    max-width: 29rem;
     margin: 1.5rem 0;
   }
   &--hero-image {
     justify-self: center;
-    // margin-top: rem;
+    align-self: center;
+    @media only screen and (min-width: 30.6875em) and (max-width: $bp-md-1) {
+      // padding: 4rem;
+      width: 60%;
+    }
   }
 }
