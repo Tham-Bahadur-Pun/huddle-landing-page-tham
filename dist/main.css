@@ -232,7 +232,8 @@ a {
 }
 @media only screen and (min-width: 36.4375em) {
   .subscribe {
-    margin-inline: 4rem;
+    max-width: 50%;
+    margin-inline: auto;
   }
 }
 .subscribe--heading {

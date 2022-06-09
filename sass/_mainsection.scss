@@ -83,7 +83,8 @@
   -o-transform: translateY(3rem);
   background-color: white;
   @media only screen and (min-width: $bp-md) {
-    margin-inline: 4rem;
+    max-width: 50%;
+    margin-inline: auto;
   }
   &--heading {
     font-size: 0.91rem;
