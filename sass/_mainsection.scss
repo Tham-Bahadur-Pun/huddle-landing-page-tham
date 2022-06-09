@@ -48,6 +48,7 @@
       order: -1;
       @media only screen and (min-width: $bp-md) {
         // display: grid;
+        order: initial;
 
         width: 20%;
         // height: 40%;
