@@ -4,15 +4,28 @@
   padding: 8rem 1rem 1rem 1rem;
   display: grid;
   grid-row-gap: 2rem;
+  @media only screen and (min-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+  }
   a {
     color: #fff;
   }
   &--logo {
+    width: 20rem;
   }
   &--details {
+    @media only screen and (min-width: $bp-md) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
     .info {
       display: grid;
       row-gap: 2rem;
+      @media only screen and (min-width: $bp-md) {
+        max-width: 27%;
+      }
       &--location,
       &--tel,
       &--mail {
@@ -34,11 +47,17 @@
   }
   &--menus {
     margin-top: 4rem;
+    @media only screen and (min-width: $bp-md) {
+      max-width: calc(100% - 27%);
+    }
   }
   &--links {
     list-style: none;
     display: grid;
     row-gap: 1.5rem;
+    @media only screen and (min-width: $bp-md) {
+      grid-template-columns: repeat(2, 120px);
+    }
   }
   &--list {
     display: block;
@@ -49,6 +68,9 @@
   .copyright--text {
     text-align: center;
     font-size: 0.8rem;
+    @media only screen and (min-width: $bp-md) {
+      text-align: right;
+    }
   }
   .social--links {
     margin-top: 2rem;

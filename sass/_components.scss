@@ -5,4 +5,8 @@
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

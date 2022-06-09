@@ -26,6 +26,9 @@
   -o-border-radius: 100px;
   border: none;
 }
+.btn:hover {
+  opacity: 0.8;
+}
 
 *,
 *::before,
@@ -248,12 +251,33 @@ a {
   display: grid;
   grid-row-gap: 2rem;
 }
+@media only screen and (min-width: 36.4375em) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer a {
   color: #fff;
+}
+.footer--logo {
+  width: 20rem;
+}
+@media only screen and (min-width: 36.4375em) {
+  .footer--details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .footer--details .info {
   display: grid;
   row-gap: 2rem;
+}
+@media only screen and (min-width: 36.4375em) {
+  .footer--details .info {
+    max-width: 27%;
+  }
 }
 .footer--details .info--location, .footer--details .info--tel, .footer--details .info--mail {
   display: grid;
@@ -268,10 +292,20 @@ a {
 .footer--menus {
   margin-top: 4rem;
 }
+@media only screen and (min-width: 36.4375em) {
+  .footer--menus {
+    max-width: 73%;
+  }
+}
 .footer--links {
   list-style: none;
   display: grid;
   row-gap: 1.5rem;
+}
+@media only screen and (min-width: 36.4375em) {
+  .footer--links {
+    grid-template-columns: repeat(2, 120px);
+  }
 }
 .footer--list {
   display: block;
@@ -282,6 +316,11 @@ a {
 .footer .copyright--text {
   text-align: center;
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 36.4375em) {
+  .footer .copyright--text {
+    text-align: right;
+  }
 }
 .footer .social--links {
   margin-top: 2rem;
